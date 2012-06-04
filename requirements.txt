@@ -1,0 +1,6 @@
+pyCLI==2.0.3
+boto==2.4.1
+
+# test requirements
+mock==0.8.0
+nose==1.1.2
