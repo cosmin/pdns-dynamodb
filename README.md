@@ -52,7 +52,7 @@ Create an executable script that looks like
 ```
 #!/bin/sh
 
-pdns-dynamodb -t TABLE -r REGION -I ACCESS_KEY -K /path/to/secret.key
+exec /path/to/pdns-dynamodb -t TABLE -r REGION -I ACCESS_KEY -K /path/to/secret.key
 ```
 
 Replacing TABLE, REGION and ACCESS_KEY with the appropriate values and
