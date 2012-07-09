@@ -1,6 +1,6 @@
 from setuptools import setup
 
-from pdns_dynamodb.version import __version__
+from pdns_dynamodb import __version__
 
 setup(name='pdns-dynamodb',
       version=__version__,
