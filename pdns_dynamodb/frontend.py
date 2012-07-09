@@ -1,4 +1,4 @@
-from version import __version__
+from pdns_dynamodb import __version__
 
 ABI_VERSION = '1'
 

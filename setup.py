@@ -11,5 +11,12 @@ setup(name='pdns-dynamodb',
       url='http://github.com/cosmin/pdns-dynamodb',
       packages=['pdns_dynamodb'],
       scripts=['bin/pdns-dynamodb'],
-      install_requires=open('requirements.txt').readlines()
+      tests_require=open('test-requirements.txt').readlines(),
+      install_requires=open('requirements.txt').readlines(),
+      classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Environment :: Console',
+        'License :: OSI Approved :: Apache Software License',
+        'Topic :: Utilities'
+        ]
      )
