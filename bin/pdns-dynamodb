@@ -1,4 +1,27 @@
 #!/usr/bin/env python
 
-from pdns_dynamodb import app
-app.run()
+"""pdns-dynamodb
+
+Usage:
+  pdns-dynamodb [OPTIONS] --table=TABLE --region=REGION
+  pdns-dynamodb -h | --help
+  pdns-dynamodb -v | --version
+
+Options:
+  -h --help                               Show this screen.
+  -v --version                            Show the version.
+
+  -t --table=TABLE                        DynamoDB table in which records are stored.
+  -r --region=REGION                      AWS region to use.
+
+  -I --access-key-id=ACCESS_KEY_ID        AWS access key to use (default: $AWS_ACCESS_KEY_ID)[.
+  -S --secret-key=SECRET_KEY              AWS secret key to use (default: $AWS_SECRET_ACCESS_KEY).
+  -K --secret-key-file=SECRET_KEY_FILE    File containing AWS secret key to use.
+"""
+
+from docopt import docopt
+
+from pdns_dynamodb import __version__, app
+
+params = docopt(__doc__, version='pdns-dynamodb %s' % __version__)
+app.run(params)
