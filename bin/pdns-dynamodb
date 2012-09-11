@@ -3,7 +3,9 @@
 """pdns-dynamodb
 
 Usage:
-  pdns-dynamodb [OPTIONS] --table=TABLE --region=REGION
+  pdns-dynamodb -t TABLE -r REGION
+  pdns-dynamodb -I ACCESS_KEY_ID -S SECRET_KEY -t TABLE -r REGION
+  pdns-dynamodb -I ACCESS_KEY_ID -K SECRET_KEY_FILE -t TABLE -r REGION
   pdns-dynamodb -h | --help
   pdns-dynamodb -v | --version
 
